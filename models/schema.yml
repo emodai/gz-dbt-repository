@@ -23,8 +23,7 @@ sources:
           - unique_combination_of_columns:
               columns:
                 - orders_id
-                - products_id
-                - date_date
+                - pdt_id
 
       - name: product
         identifier: raw_gz_product
