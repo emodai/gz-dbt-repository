@@ -28,7 +28,7 @@ sources:
         # Freshness testing - make sure the latest data in sales is more than 90 days old.
         loaded_at_field: CAST(date_date AS TIMESTAMP)
         freshness:
-          warn_after: {count: 90, period: day}
+          warn_after: {count: 90, period: day} # ⚠️ warn if older than 90 days
 
       - name: product
         identifier: raw_gz_product
