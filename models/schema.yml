@@ -20,10 +20,11 @@ sources:
           - name: quantity
             description: quantity of the product sold
         tests:
-          - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
+          - unique_combination_of_columns:
+              columns:
                 - orders_id
                 - products_id
+                - date_date
 
       - name: product
         identifier: raw_gz_product
