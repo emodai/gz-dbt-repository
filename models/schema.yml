@@ -57,7 +57,18 @@ sources:
             description: cost of the log for the product
           - name: ship_cost
             description: cost of the ship for the product
-   
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: ads details and cost of Greenweez / campaign_key is not unique
+      - name: bing
+        identifier: raw_gz_bing
+        description: bing details and cost of Greenweez /campaign_key is not unique
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: criteo details and cost of Greenweez /campaign_key is not unique
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: facebook details and cost of Greenweez /campaign_key is not unique
    #addition of the models created in the schema 
 
 models:
