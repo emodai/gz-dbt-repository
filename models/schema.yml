@@ -352,4 +352,52 @@ models:
          tests:
          - not_null
 
+   - name: finance_campaigns_day
+     description: join the int_campaigns_day model with finance_daysmodel / We want to compute the ads_margin column
+     columns:
+       - name: date_date
+         tests:
+         - unique
+         - not_null
+       - name: ads_margin
+         tests:
+         - not_null
+       - name: average_basket
+         tests:
+         - not_null
+       - name: operational_margin
+         tests:
+         - not_null
+       - name: ads_cost
+         tests:
+         - not_null
+       - name: ads_impression
+         tests:
+         - not_null
+       - name: ads_click
+         tests:
+         - not_null
+       - name: quantity
+         tests:
+         - not_null
+       - name: revenue
+         tests:
+         - not_null
+       - name: purchase_cost
+         tests:
+         - not_null
+       - name: margin
+         tests:
+         - not_null
+       - name: shipping_fee
+         tests:
+         - not_null
+       - name: log_cost
+         tests:
+         - not_null
+       - name: ship_cost
+         tests:
+         - not_null
+
+
 
