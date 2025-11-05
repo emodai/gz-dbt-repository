@@ -197,7 +197,7 @@ sources:
         tests:
           - unique:
               column_name: "(date_date||'-'||campaign_key)"
-      
+
    #addition of the models created in the schema 
 
 models:
@@ -305,3 +305,22 @@ models:
          description: the cost of preparing the parcel in the distribution centre/warehouse
        - name: ship_cost
          description: shipping cost paid by Greenweez to the carrier/logistics provider
+#new models from patch2         
+   - name: int_campaigns
+     description: union all campaigns into one data view in bigquery
+     columns:
+       - name: date_date
+       - name: paid_source
+       - name: campaign_key
+       - name: ads_cost
+       - name: impression
+       - name: click
+       - name: unique_key
+   - name: int_campaigns_day
+     description: group total campaigns by day
+     columns:
+       - name: date_date
+       - name: total_campaigns
+       - name: total_cost
+       - name: total_impressions
+       - name: total_clicks
