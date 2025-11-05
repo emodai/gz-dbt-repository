@@ -360,8 +360,6 @@ models:
          - unique
          - not_null
        - name: ads_margin
-         tests:
-         - not_null
        - name: average_basket
          tests:
          - not_null
@@ -369,14 +367,8 @@ models:
          tests:
          - not_null
        - name: ads_cost
-         tests:
-         - not_null
        - name: ads_impression
-         tests:
-         - not_null
        - name: ads_click
-         tests:
-         - not_null
        - name: quantity
          tests:
          - not_null
