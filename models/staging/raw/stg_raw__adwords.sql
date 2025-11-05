@@ -15,8 +15,8 @@ renamed as (
         campgn_name AS campaign_name,
         CAST(ads_cost AS FLOAT64) AS ads_cost,
         impression,
-        click
-
+        click,
+        CONCAT(date_date, '-', campaign_key) AS unique_key
     from source
 
 )

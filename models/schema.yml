@@ -77,7 +77,7 @@ sources:
             description: name of the campaign
             tests:
             - not_null
-          - name: add_cost
+          - name: ads_cost
             description: cost of the ad
             tests:
             - not_null
@@ -112,7 +112,7 @@ sources:
             description: name of the campaign
             tests:
             - not_null
-          - name: add_cost
+          - name: ads_cost
             description: cost of the ad
             tests:
             - not_null
@@ -147,7 +147,7 @@ sources:
             description: name of the campaign
             tests:
             - not_null
-          - name: add_cost
+          - name: ads_cost
             description: cost of the ad
             tests:
             - not_null
@@ -182,7 +182,7 @@ sources:
             description: name of the campaign
             tests:
             - not_null
-          - name: add_cost
+          - name: ads_cost
             description: cost of the ad
             tests:
             - not_null
