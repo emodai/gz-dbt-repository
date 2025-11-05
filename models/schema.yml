@@ -310,17 +310,46 @@ models:
      description: union all campaigns into one data view in bigquery
      columns:
        - name: date_date
+         tests:
+         - not_null
        - name: paid_source
+         tests:
+         - not_null
        - name: campaign_key
+         tests:
+         - not_null
        - name: ads_cost
+         tests:
+         - not_null
        - name: impression
+         tests:
+         - not_null
        - name: click
+         tests:
+         - not_null
        - name: unique_key
+         tests:
+         - unique
+         - not_null
+         
    - name: int_campaigns_day
      description: group total campaigns by day
      columns:
        - name: date_date
+         tests:
+         - unique
+         - not_null
        - name: total_campaigns
+         tests:
+         - not_null
        - name: total_cost
+         tests:
+         - not_null
        - name: total_impressions
+         tests:
+         - not_null
        - name: total_clicks
+         tests:
+         - not_null
+
+
