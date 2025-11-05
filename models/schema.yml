@@ -60,15 +60,144 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: ads details and cost of Greenweez / campaign_key is not unique
+        columns:
+          - name: date_date
+            description: date of the ad
+            tests:
+            - not_null
+          - name: paid_source
+            description: name of the source (e.g. adwords, criteo, bing or facebook)
+            tests:
+            - not_null
+          - name: campaign_key
+            description: identifier of the campaign / not unique
+            tests:
+            - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+            - not_null
+          - name: add_cost
+            description: cost of the ad
+            tests:
+            - not_null
+          - name: impression
+            description: nb of views for the add
+            tests:
+            - not_null
+          - name: click
+            description: nb of clicks on the add
+            tests:
+            - not_null
+        tests:
+          - unique:
+              column_name: "(date_date||'-'||campaign_key)"
       - name: bing
         identifier: raw_gz_bing
         description: bing details and cost of Greenweez /campaign_key is not unique
+        columns:
+          - name: date_date
+            description: date of the ad
+            tests:
+            - not_null
+          - name: paid_source
+            description: name of the source (e.g. adwords, criteo, bing or facebook)
+            tests:
+            - not_null
+          - name: campaign_key
+            description: identifier of the campaign / not unique
+            tests:
+            - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+            - not_null
+          - name: add_cost
+            description: cost of the ad
+            tests:
+            - not_null
+          - name: impression
+            description: nb of views for the add
+            tests:
+            - not_null
+          - name: click
+            description: nb of clicks on the add
+            tests:
+            - not_null
+        tests:
+          - unique:
+              column_name: "(date_date||'-'||campaign_key)"
       - name: criteo
         identifier: raw_gz_criteo
         description: criteo details and cost of Greenweez /campaign_key is not unique
+        columns:
+          - name: date_date
+            description: date of the ad
+            tests:
+            - not_null
+          - name: paid_source
+            description: name of the source (e.g. adwords, criteo, bing or facebook)
+            tests:
+            - not_null
+          - name: campaign_key
+            description: identifier of the campaign / not unique
+            tests:
+            - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+            - not_null
+          - name: add_cost
+            description: cost of the ad
+            tests:
+            - not_null
+          - name: impression
+            description: nb of views for the add
+            tests:
+            - not_null
+          - name: click
+            description: nb of clicks on the add
+            tests:
+            - not_null
+        tests:
+          - unique:
+              column_name: "(date_date||'-'||campaign_key)"
       - name: facebook
         identifier: raw_gz_facebook
         description: facebook details and cost of Greenweez /campaign_key is not unique
+        columns:
+          - name: date_date
+            description: date of the ad
+            tests:
+            - not_null
+          - name: paid_source
+            description: name of the source (e.g. adwords, criteo, bing or facebook)
+            tests:
+            - not_null
+          - name: campaign_key
+            description: identifier of the campaign / not unique
+            tests:
+            - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+            - not_null
+          - name: add_cost
+            description: cost of the ad
+            tests:
+            - not_null
+          - name: impression
+            description: nb of views for the add
+            tests:
+            - not_null
+          - name: click
+            description: nb of clicks on the add
+            tests:
+            - not_null
+        tests:
+          - unique:
+              column_name: "(date_date||'-'||campaign_key)"
+      
    #addition of the models created in the schema 
 
 models:
